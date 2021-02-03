@@ -1,0 +1,494 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:doc="http://xsltsl.org/xsl/documentation/1.0" xmlns:dt="http://xsltsl.org/date-time" xmlns:str="http://xsltsl.org/string" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-16" />
+    <title>RobLingle</title>
+    <style type="text/css" id="font">
+        @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,600i,700,700i,800,800i");
+    </style>
+    <style type="text/css" id="static">
+        html,body{margin:0;border:0;outline:0;vertical-align:baseline;background:transparent}
+        span,applet,object,iframe,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+        div#document h1,div#document h2,div#document h3,div#document h4,div#document h5,div#document h6,div#document p,div#document img{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;}
+        div#document{word-break: break-word; }
+        div#document ul{list-style:none}
+        blockquote,q{quotes:none}
+        blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+        div#document :focus{outline:0}
+        div#document del{text-decoration:line-through}
+        div#document a img{border:none}
+        div#document ul, div#document li{list-style-type:disc}
+        div#document ul, div#document ol{margin:0 0 0 12pt;padding:0}
+        div#document ol{margin:0 0 0 10pt;}
+        div#document ul li, div#document ol li{padding:0; margin-left:5pt}
+        div#document ol li{list-style-type:decimal}
+        div#document .clear{clear:both;height:0}
+        div#document br.clear{line-height:0}
+        div#document div.name{font-size:21pt;line-height:30pt;border-bottom:0pt dotted;font-weight:700;
+        text-transform:uppercase;padding-left:10pt;word-wrap:break-word;height: 80pt;
+        vertical-align: top;
+        display: table-cell;
+        }
+        div#document div.name span.field{display:block}
+        div#document div.paragraph{position:relative}
+        div#document  [id^="SECTION_EDUC"] div.paragraph,div#document  [id^="SECTION_EXPR"] div.paragraph{clear:both}
+        div#document div.address{position:relative;padding-bottom:5pt}
+        div#document span.jobtitle,span.companyname,span.degree,span.programline,span.joblocation{font-style:none}
+        div#document span.jobtitle{display:block}
+        div#document .dateyear{color:#C3C3C3;text-transform:uppercase}
+        div#document span.paddedline{display:block;font-weight:500;}
+        div#document{color:#666;background-color:#FFF!important;line-height:14pt;color:#333;position:relative;-webkit-print-color-adjust: exact;}<!--to remove background-color later at time of delivery-->
+        div#document p font{color:#666!important}
+        /*FIX for FORCEFULLY making left margin ZERO for CL*/
+        div#document .skillSection:after{content:'';clear:both;display:table}
+        div#document div.skillSection .paragraph{width:33%; float:left;padding-left:15pt;padding-bottom:5pt;box-sizing: border-box}
+        div#document div.skillSection .paragraph.firstparagraph{margin-top:1pt;}
+        div#document div.skillSection .paragraph:nth-child(3n+5){clear:both}
+        div#document div.skillSection{width:100%}
+        div#document div.skillSection .field{display: list-item;margin-left: 0;list-style-type:disc;vertical-align: text-top;;padding-right:4pt}
+        div#document  iv.skillSection .field:empty{display: inline;}
+        div#document em {font-style: italic;}
+        div#document strong,div#document  b{font-weight:700;}
+        div#document.pagesize{width:536pt;box-sizing:border-box}
+        div#document .section{padding-top:9pt;padding-bottom:9pt;width:100%}
+        div#document div.firstsection{padding-top:0;display: table;float:left;width:225pt;}
+        div#document div.firstsection.summary{float:none;width:auto;}
+        div#document .section.contact-name{float:left;margin-top:0;width:calc(100% - 132pt);}
+        div#document div.SECTION_CNTC{float: right; padding-bottom:6pt;padding:0;font-weight:400;width: 132pt; margin-top:0;}
+        div#document div.heading{margin-bottom:7pt;border-bottom:0pt;font-weight:600;clear:both;text-transform:uppercase;background-color: #f7f7f7;padding-left:8pt}
+        div#document div.paragraph{font-size:inherit} 
+        div#document .singlecolumn,div#document .maincolumn{margin-left:0;width:97%;font-weight:400;padding-left:10pt}
+        div#document .singlecolumn li{margin-bottom:5pt;}
+        div#document .sectionCL .singlecolumn{padding-left:0pt;}
+
+        /*FIX for Re-calculating width of singlecolumn for CL*/
+        div#document .graphic {float:left;background-color:#fff;text-align: center;text-transform: uppercase;width:66pt;height:66pt;font-size: 24pt;line-height:74pt;vertical-align: middle;padding: 0;
+        clear: both;
+        display: inline;
+        margin: 4px;
+        position:relative;
+        font-weight:700;
+        }
+        div#document .datesWrapper {float: right; display: inline-block; margin: 0 0 8pt 35pt;}
+        div#document .graphic i {-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg); transform: rotate(-45deg); border-bottom: 1.5pt solid; display: block; position: relative; left: 0; top: 34pt;}
+        div#document .graphic .textTop {position:absolute;top: -16pt;left: 8pt;font-weight:500}
+        div#document .graphic .textBtm {position:absolute;bottom: -21pt;right: 8pt;font-weight:500}
+        div#document .italicTxtStyle{} /*blank style used for dynamic class in C# code*/
+        div#document .graphic .full-name{display:none}
+        div#document .graphic .full-name:empty + .textTop {top: 0; left: 0; right: 0; font-size: 28pt; line-height: 65pt; font-weight:700;}
+        div#document .graphic .full-name:empty + .textTop + i{display:none;}
+        div#document .city-name{display:inline-block;white-space:nowrap;}
+        
+		div#document .section.photo-cv{position:absolute;width:67pt; height:67pt;margin-top:0;padding:0;}
+		div#document .section.photo-cv span{display:block;}
+		div#document .section.photo-cv img{max-width:100%;height: 67pt;width:67pt;}
+		div#document .section.photo-cv + .SECTION_NAME .graphic{display:none;}
+		div#document .section.photo-cv + .SECTION_NAME .name{padding-left: 80pt;}
+		div#document .section.photo-cv + .SECTION_NAME + .SECTION_CNTC{padding-top: 1pt;}/**/
+		
+		@media print {
+        div#document.pagesize{width:100%}
+        }
+        body{font-feature-settings: "liga" 0; -moz-font-feature-settings: "liga" off;}
+        div#document .clearDiv{clear:both;}
+        /*css to break long email*/
+        div#document .address .longEmail {display: block;word-break: break-all;}
+        div#document div.address > span.contactDependecy:last-child > span.contactSeperator{display:none;}
+        div#document .contact-name + .section {padding-top:6pt;}
+        div#document .SECTION_CNTC + .section{padding-top:9pt;display: inline-block;}
+        div#document .margin-tp10{margin-top:7pt}
+
+    </style>
+    <style type="text/css" id="unparsed">
+        div#document div.SECTION_CNTC{right:{$LRMR}in;}
+        div#document.vmargins{padding-top:{$TBMR}pt;padding-bottom:{$TBMR}pt}
+        div#document.hmargins{padding-left:{$LRMR}in;padding-right:{$LRMR}in}
+        div#document.fontsize {font-size: {$FTSZ}pt; font-weight:400}
+        div#document.fontface{font-family:{$FTFC};}
+        div#document div.sectiontitle{font-size:{$HDSZ}pt;line-height:23pt;font-weight:600}
+
+        /* Color ribbon styles */
+
+        div#document .graphic {color: {$HDCL};box-shadow: 0 0 0 2pt {$HDCL};-webkit-box-shadow: 0 0 0 2pt {$HDCL};-moz-box-shadow: 0 0 0 2pt {$HDCL};}
+        div#document div.name{color: {$HDCL}}
+        div#document div.sectiontitle {color: {$HDCL}}
+
+        /* Color ribbon Styles ENDS HERE */
+
+		@media only screen and (min-width: 768px) and (max-width: 991px){
+			div#document.hmargins{padding-left:{$LRMRT}in;padding-right:{$LRMRT}in;}
+		}
+
+        /*  used LRMRM for mobile  */
+        @media only screen and (max-width: 767px){
+        div#document.hmargins{padding-left:{$LRMRM}in;padding-right:{$LRMRM}in;}
+        div#document .section{line-height:14pt;} /* used to fix zoom issue shifted to drag content class on finalize page*/
+        }
+    </style>
+    <style type="text/css" id="dynamic">
+        div#document div.SECTION_CNTC{right:0.75in;}
+        div#document.vmargins{padding-top:28pt;padding-bottom:28pt}
+        div#document.hmargins{padding-left:0.75in;padding-right:0.75in}
+        div#document.fontsize {font-size: 9pt; font-weight:400}
+        div#document.fontface{font-family:Raleway;}
+        div#document div.sectiontitle{font-size:11pt;line-height:23pt;font-weight:600}
+
+        /* Color ribbon styles */
+
+        div#document .graphic {color: #2f527b;box-shadow: 0 0 0 2pt #2f527b;-webkit-box-shadow: 0 0 0 2pt #2f527b;-moz-box-shadow: 0 0 0 2pt #2f527b;}
+        div#document div.name{color: #2f527b}
+        div#document div.sectiontitle {color: #2f527b}
+
+        /* Color ribbon Styles ENDS HERE */
+
+		@media only screen and (min-width: 768px) and (max-width: 991px){
+			div#document.hmargins{padding-left:0.30000000000000004in;padding-right:0.30000000000000004in;}
+		}
+
+        /*  used LRMRM for mobile  */
+        @media only screen and (max-width: 767px){
+        div#document.hmargins{padding-left:0.10000000000000003in;padding-right:0.10000000000000003in;}
+        div#document .section{line-height:14pt;} /* used to fix zoom issue shifted to drag content class on finalize page*/
+        }
+    </style>
+  </head>
+  <body>
+    <div id="document" class="RND fontsize fontface vmargins hmargins linespacing pagesize">
+      <div id="SECTION_NAMEad95ac9a-0d80-441e-bf23-b8f34bf48bf1" class="section SECTION_NAME contact-name firstsection" style="
+      padding-top:NaNpx;
+    ">
+        <div id="PARAGRAPH_ad95ac9a-0d80-441e-bf23-b8f34bf48bf1_1" class="paragraph PARAGRAPH_NAME firstparagraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="graphic">
+                    <span class="full-name">L</span>
+                    <span class="textTop">R</span>
+                    <i class="italicTxtStyle"></i>
+                    <span class="textBtm">L</span>
+                </div>
+                <div class="name del1Skin">
+                    <span class="field" id="ad95ac9a-0d80-441e-bf23-b8f34bf48bf1FNAM1">Rob</span>
+                    <span class="field" dependency="FNAM+LNAM" id="ad95ac9a-0d80-441e-bf23-b8f34bf48bf1LNAM1">Lingle</span>
+                </div>
+            </div>
+      </div>
+      <div id="SECTION_CNTC3ac30222-6ab9-43bb-a214-d3d9745932cc" class="section SECTION_CNTC" style="
+      padding-top:NaNpx;
+    ">
+        <div id="PARAGRAPH_3ac30222-6ab9-43bb-a214-d3d9745932cc_1" class="paragraph PARAGRAPH_CNTC firstparagraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="address">
+                   <span class="contactDependecy"><span class="field" id="3ac30222-6ab9-43bb-a214-d3d9745932ccSTRT1">8006 Lawrence Rd.</span><span class="contactSeperator">, </span></span>
+                   <span class="contactDependecy"><span class="spaced field city-name" id="3ac30222-6ab9-43bb-a214-d3d9745932ccCITY1">Bethel Park</span><span class="contactSeperator">, </span></span>
+                   
+				   <span class="contactDependecy"><span class="spaced field" id="3ac30222-6ab9-43bb-a214-d3d9745932ccSTAT1">PA</span><span class="contactSeperator">  </span></span>
+                   <span class="contactDependecy"><span class="spaced field" id="3ac30222-6ab9-43bb-a214-d3d9745932ccZIPC1">15102</span><br /></span>
+                   
+                   <span class="contactDependecy"><span class="field" id="3ac30222-6ab9-43bb-a214-d3d9745932ccCPHN1">412.225.8230</span><span class="contactSeperator">,  </span></span>
+                   <span class="contactDependecy"><span class="field longEmail" id="3ac30222-6ab9-43bb-a214-d3d9745932ccEMAI1">roblingle2@gmail.com</span></span>
+                </div>
+            </div>
+      </div>
+      <div id="SECTION_SUMM16137ad9-fe10-41c2-900c-38ae0dddf84c" class="section summary" style="
+      padding-top:NaNpx;
+    ">
+        <div class="heading">
+                <div id="SECTNAME_SUMM16137ad9-fe10-41c2-900c-38ae0dddf84c" class="sectiontitle">Professional Summary</div>
+            </div>
+        <div id="PARAGRAPH_16137ad9-fe10-41c2-900c-38ae0dddf84c_1" class="paragraph firstparagraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="field singlecolumn" id="16137ad9-fe10-41c2-900c-38ae0dddf84cFRFM1"><p>A passionate empathetic leader with 15+ years of diverse experiences, all in service to helping engineering teams deliver technology and services to solve customer needs, no matter the domain. I am a life-long learner with a growth mindset, and humility to match. I believe my unique blend of experiences, compassionate temperament, work ethic, and teamwork orientation is my value; all I need beyond that is organizational context</p></div>
+            </div>
+      </div>
+      <div id="SECTION_HILT7df344b5-557f-4f2b-8a15-1243e3e6ed99" class="section skillSection" style="
+      padding-top:NaNpx;
+    ">
+        <div class="heading">
+                <div id="SECTNAME_HILT7df344b5-557f-4f2b-8a15-1243e3e6ed99" class="sectiontitle">Skills</div>
+            </div>
+        <div id="PARAGRAPH_7df344b5-557f-4f2b-8a15-1243e3e6ed99_1" class="paragraph firstparagraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn maincolumn">
+                    <div class="field" id="7df344b5-557f-4f2b-8a15-1243e3e6ed99FRFM1">Leadership</div>
+                </div>
+            </div>
+        <div id="PARAGRAPH_7df344b5-557f-4f2b-8a15-1243e3e6ed99_2" class="paragraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn maincolumn">
+                    <div class="field" id="7df344b5-557f-4f2b-8a15-1243e3e6ed99FRFM2">Agile/DevOps Transformation</div>
+                </div>
+            </div>
+        <div id="PARAGRAPH_7df344b5-557f-4f2b-8a15-1243e3e6ed99_3" class="paragraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn maincolumn">
+                    <div class="field" id="7df344b5-557f-4f2b-8a15-1243e3e6ed99FRFM3">Team Building</div>
+                </div>
+            </div>
+        <div id="PARAGRAPH_7df344b5-557f-4f2b-8a15-1243e3e6ed99_4" class="paragraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn maincolumn">
+                    <div class="field" id="7df344b5-557f-4f2b-8a15-1243e3e6ed99FRFM4">Software Development</div>
+                </div>
+            </div>
+        <div id="PARAGRAPH_7df344b5-557f-4f2b-8a15-1243e3e6ed99_5" class="paragraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn maincolumn">
+                    <div class="field" id="7df344b5-557f-4f2b-8a15-1243e3e6ed99FRFM5">Django/Python</div>
+                </div>
+            </div>
+        <div id="PARAGRAPH_7df344b5-557f-4f2b-8a15-1243e3e6ed99_6" class="paragraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn maincolumn">
+                    <div class="field" id="7df344b5-557f-4f2b-8a15-1243e3e6ed99FRFM6">Entrepreneurial Experience</div>
+                </div>
+            </div>
+        <div id="PARAGRAPH_7df344b5-557f-4f2b-8a15-1243e3e6ed99_7" class="paragraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn maincolumn">
+                    <div class="field" id="7df344b5-557f-4f2b-8a15-1243e3e6ed99FRFM7">Empathy</div>
+                </div>
+            </div>
+        <div id="PARAGRAPH_7df344b5-557f-4f2b-8a15-1243e3e6ed99_8" class="paragraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn maincolumn">
+                    <div class="field" id="7df344b5-557f-4f2b-8a15-1243e3e6ed99FRFM8">Passionate Problem Solver</div>
+                </div>
+            </div>
+        <div id="PARAGRAPH_7df344b5-557f-4f2b-8a15-1243e3e6ed99_9" class="paragraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn maincolumn">
+                    <div class="field" id="7df344b5-557f-4f2b-8a15-1243e3e6ed99FRFM9">Listening</div>
+                </div>
+            </div>
+      </div>
+      <div id="SECTION_EXPRf30d7052-0a15-4528-8033-b01be3bf6a17" class="section" style="
+      padding-top:NaNpx;
+    ">
+        <div class="heading">
+                <div id="SECTNAME_EXPRf30d7052-0a15-4528-8033-b01be3bf6a17" class="sectiontitle">Experience</div>
+            </div>
+        <div id="PARAGRAPH_f30d7052-0a15-4528-8033-b01be3bf6a17_1" class="paragraph firstparagraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn margin-tp10">
+                    
+                    <span class="paddedline">
+                        <span class="datesWrapper">
+                            <span class="jobdates" format="%B %Y" id="f30d7052-0a15-4528-8033-b01be3bf6a17JSTD1">July 2020</span><span> - </span><span class="jobdates" format="%B %Y" id="f30d7052-0a15-4528-8033-b01be3bf6a17EDDT1">Current</span>
+                        </span>
+                        <span class="jobtitle" id="f30d7052-0a15-4528-8033-b01be3bf6a17JTIT1">Software Engineering Manager</span>
+                        <span class="companyname" id="f30d7052-0a15-4528-8033-b01be3bf6a17COMP1">Hitachi Rail</span><span><span> | </span></span>
+                        <span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JCIT1">Pittsburgh</span><span>, </span>
+                        <span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JSTA1">PA</span>
+						<span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JCNT1"></span>
+                    </span>
+                    <span class="jobline" id="f30d7052-0a15-4528-8033-b01be3bf6a17JDES1"><ul>
+  <li>Contributed feature and auth functionality for an in house Django/Python app to accelerate this effort and test drive the CI/CD process</li>
+  <li>Hire, support, and develop software engineers for forwarding application development and DevOps teams</li>
+  <li>Define and cascade departmental goals, create context, and support engineers in defining individual goals that achieve these as well as personal development goals</li>
+  <li>Collaborate with teams to promote cultural shifts to modern engineering &nbsp;&amp; working practices (TDD/BDD/Scrum/Kanban)</li>
+</ul></span>
+                </div>
+            </div>
+        <div id="PARAGRAPH_f30d7052-0a15-4528-8033-b01be3bf6a17_2" class="paragraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn margin-tp10">
+                    
+                    <span class="paddedline">
+                        <span class="datesWrapper">
+                            <span class="jobdates" format="%B %Y" id="f30d7052-0a15-4528-8033-b01be3bf6a17JSTD2">August 2019</span><span> - </span><span class="jobdates" format="%B %Y" id="f30d7052-0a15-4528-8033-b01be3bf6a17EDDT2">July 2020</span>
+                        </span>
+                        <span class="jobtitle" id="f30d7052-0a15-4528-8033-b01be3bf6a17JTIT2">BUSINESS TECHNOLOGY MANAGER SR.</span>
+                        <span class="companyname" id="f30d7052-0a15-4528-8033-b01be3bf6a17COMP2">PNC Bank</span><span><span> | </span></span>
+                        <span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JCIT2">Pittsburgh</span><span>, </span>
+                        <span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JSTA2">PA</span>
+						<span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JCNT2"></span>
+                    </span>
+                    <span class="jobline" id="f30d7052-0a15-4528-8033-b01be3bf6a17JDES2"><ul>
+  <li>Talent recruiting and development for a team of 50 engineers; engineers were part of a shared DevOps function providing infrastructure for DevOps capabilities such as automated infrastructure, containers, build systems and data analytics</li>
+  <li>Refined performance evaluations to be explicit, focused on team contribution, organizational goals and personal development</li>
+  <li>Wrote Python app to screen scrape a confluence staffing page and ingest that into Elastic Search / Kibana to create visual to inform staffing and budget&nbsp;</li>
+  <li>Led a small team of production support engineers upgrading, maintaining, and deploying Apache/Tomcat/Websphere/Linux/Windows/SQL, etc.</li>
+</ul></span>
+                </div>
+            </div>
+        <div id="PARAGRAPH_f30d7052-0a15-4528-8033-b01be3bf6a17_3" class="paragraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn margin-tp10">
+                    
+                    <span class="paddedline">
+                        <span class="datesWrapper">
+                            <span class="jobdates" format="%B %Y" id="f30d7052-0a15-4528-8033-b01be3bf6a17JSTD3">October 2017</span><span> - </span><span class="jobdates" format="%B %Y" id="f30d7052-0a15-4528-8033-b01be3bf6a17EDDT3">August 2019</span>
+                        </span>
+                        <span class="jobtitle" id="f30d7052-0a15-4528-8033-b01be3bf6a17JTIT3">AGILE COACH</span>
+                        <span class="companyname" id="f30d7052-0a15-4528-8033-b01be3bf6a17COMP3">PNC Bank</span><span><span> | </span></span>
+                        <span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JCIT3">Pittsburgh</span><span>, </span>
+                        <span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JSTA3">PA</span>
+						<span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JCNT3"></span>
+                    </span>
+                    <span class="jobline" id="f30d7052-0a15-4528-8033-b01be3bf6a17JDES3"><ul>
+  <li>Embed with and coach development teams on Scrum/Kanban/Lean Software &amp; Product Development</li>
+  <li>Work with software engineers to improve code hygiene through consistent coding standards, TDD/BDD, &nbsp;CI/CD automation, etc.</li>
+  <li>Worked with teams to serialize releases, foster alignment and comprehension, and bring test and development into lock step</li>
+  <li>Worked with HR to refine job descriptions for new roles, democratize performance reviews, and develop team incentives to drive culture change</li>
+  <li>Helped define a software capitalization policy that would work for agile teams incrementally breaking down work sprint over sprint</li>
+</ul></span>
+                </div>
+            </div>
+        <div id="PARAGRAPH_f30d7052-0a15-4528-8033-b01be3bf6a17_4" class="paragraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn margin-tp10">
+                    
+                    <span class="paddedline">
+                        <span class="datesWrapper">
+                            <span class="jobdates" format="%B %Y" id="f30d7052-0a15-4528-8033-b01be3bf6a17JSTD4">January 2015</span><span> - </span><span class="jobdates" format="%B %Y" id="f30d7052-0a15-4528-8033-b01be3bf6a17EDDT4">October 2017</span>
+                        </span>
+                        <span class="jobtitle" id="f30d7052-0a15-4528-8033-b01be3bf6a17JTIT4">DIRECTOR</span>
+                        <span class="companyname" id="f30d7052-0a15-4528-8033-b01be3bf6a17COMP4">CGI (formerly) Summa Technologies</span><span><span> | </span></span>
+                        <span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JCIT4">Pittsburgh</span><span>, </span>
+                        <span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JSTA4">PA</span>
+						<span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JCNT4"></span>
+                    </span>
+                    <span class="jobline" id="f30d7052-0a15-4528-8033-b01be3bf6a17JDES4"><ul>
+  <li>Engagement lead at PNC Bank for their Agile Transformation initiative</li>
+  <li>Designed and led a SAFe transformation for the digital division of ThermoFisher Scientific</li>
+  <li>Led public SAFe training's (was SPC4 certified)</li>
+  <li>Participate in sales/bid process for new clients and initiation of engagements</li>
+  <li>Created and led a small LLC to organize the 2017 Heart of Agile conference in Pittsburgh, in which Summa sponsored and participated</li>
+  <li>Spoke at Meetups on behalf of Summa to engage the community and generate engagement opportunities</li>
+</ul></span>
+                </div>
+            </div>
+        <div id="PARAGRAPH_f30d7052-0a15-4528-8033-b01be3bf6a17_5" class="paragraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn margin-tp10">
+                    
+                    <span class="paddedline">
+                        <span class="datesWrapper">
+                            <span class="jobdates" format="%B %Y" id="f30d7052-0a15-4528-8033-b01be3bf6a17JSTD5">August 2013</span><span> - </span><span class="jobdates" format="%B %Y" id="f30d7052-0a15-4528-8033-b01be3bf6a17EDDT5">January 2015</span>
+                        </span>
+                        <span class="jobtitle" id="f30d7052-0a15-4528-8033-b01be3bf6a17JTIT5">SENIOR ENGINEERING PROJECT MANAGER</span>
+                        <span class="companyname" id="f30d7052-0a15-4528-8033-b01be3bf6a17COMP5">CA Technologies, Broadcom</span><span><span> | </span></span>
+                        <span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JCIT5">Pittsburgh</span><span>, </span>
+                        <span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JSTA5">PA</span>
+						<span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JCNT5"></span>
+                    </span>
+                    <span class="jobline" id="f30d7052-0a15-4528-8033-b01be3bf6a17JDES5"><ul>
+  <li>Worked with Engineering teams on a commercially available mainframe operations software</li>
+  <li>Worked with Product Owners to support release planning, localization, and escrow of code</li>
+  <li>Partnered with scrum masters and engineering teams to remove impediments and provide necessary tools/resources to be more effective</li>
+  <li>Participated in the evolution of CA's transformation that saw the elimination of time-sheets, alignment to total cost of ownership, consolidation of roles around product domains rather than functional disciplines, etc.</li>
+</ul></span>
+                </div>
+            </div>
+        <div id="PARAGRAPH_f30d7052-0a15-4528-8033-b01be3bf6a17_6" class="paragraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn margin-tp10">
+                    
+                    <span class="paddedline">
+                        <span class="datesWrapper">
+                            <span class="jobdates" format="%B %Y" id="f30d7052-0a15-4528-8033-b01be3bf6a17JSTD6">February 2012</span><span> - </span><span class="jobdates" format="%B %Y" id="f30d7052-0a15-4528-8033-b01be3bf6a17EDDT6">August 2013</span>
+                        </span>
+                        <span class="jobtitle" id="f30d7052-0a15-4528-8033-b01be3bf6a17JTIT6">CONSULTANT (IMPLEMENTATIONS)</span>
+                        <span class="companyname" id="f30d7052-0a15-4528-8033-b01be3bf6a17COMP6">MasterCard International</span><span><span> | </span></span>
+                        <span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JCIT6">Pittsburgh</span><span>, </span>
+                        <span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JSTA6">PA</span>
+						<span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JCNT6"></span>
+                    </span>
+                    <span class="jobline" id="f30d7052-0a15-4528-8033-b01be3bf6a17JDES6"><ul>
+  <li>Worked to onboard financial institutions onto <span class="ignoredWords" id="EXPR_6_1'|1">MasterCard</span> IPS Platform</li>
+  <li>Client facing role with broad responsibilities</li>
+</ul></span>
+                </div>
+            </div>
+        <div id="PARAGRAPH_f30d7052-0a15-4528-8033-b01be3bf6a17_7" class="paragraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn margin-tp10">
+                    
+                    <span class="paddedline">
+                        <span class="datesWrapper">
+                            <span class="jobdates" format="%B %Y" id="f30d7052-0a15-4528-8033-b01be3bf6a17JSTD7">October 2006</span><span> - </span><span class="jobdates" format="%B %Y" id="f30d7052-0a15-4528-8033-b01be3bf6a17EDDT7">February 2012</span>
+                        </span>
+                        <span class="jobtitle" id="f30d7052-0a15-4528-8033-b01be3bf6a17JTIT7">APPLICATION DEVELOPER</span>
+                        <span class="companyname" id="f30d7052-0a15-4528-8033-b01be3bf6a17COMP7">US Bancorp / Elan Financial Services</span><span><span> | </span></span>
+                        <span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JCIT7">Pittsburgh</span><span>, </span>
+                        <span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JSTA7">PA</span>
+						<span class="joblocation" id="f30d7052-0a15-4528-8033-b01be3bf6a17JCNT7"></span>
+                    </span>
+                    <span class="jobline" id="f30d7052-0a15-4528-8033-b01be3bf6a17JDES7"><ul>
+  <li>Variety of roles, which culminated in a Sr. Application Develop / team lead focused on financial network interface enhancements (<span class="ignoredWords" id="EXPR_7_1'|1">MasterCard</span>, Visa, Pulse, AFFN, etc,)</li>
+</ul></span>
+                </div>
+            </div>
+      </div>
+      <div id="SECTION_EDUCfa731992-c093-4c17-a98e-21cd7d40715a" class="section" style="
+      padding-top:NaNpx;
+    ">
+        <div class="heading">
+                <div id="SECTNAME_EDUCfa731992-c093-4c17-a98e-21cd7d40715a" class="sectiontitle">Education</div>
+            </div>
+        <div id="PARAGRAPH_fa731992-c093-4c17-a98e-21cd7d40715a_1" class="paragraph firstparagraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn margin-tp10">
+                    
+                    <span class="paddedline">
+                        <span class="datesWrapper">
+                            <span class="jobdates" format="%B %Y" id="fa731992-c093-4c17-a98e-21cd7d40715aGRDT1">December 2012</span>
+                        </span>
+						  
+                        <span class="degree" id="fa731992-c093-4c17-a98e-21cd7d40715aDGRE1">Bachelors of Science</span>
+                        <span class="programline" id="fa731992-c093-4c17-a98e-21cd7d40715aSTUY1"></span>
+                    </span>
+                    <span class="paddedline">
+                        <span id="fa731992-c093-4c17-a98e-21cd7d40715aSCHO1">Duquesne University</span><span><span>, </span></span>
+                        <span id="fa731992-c093-4c17-a98e-21cd7d40715aSCIT1">Pittsburgh</span><span>, </span>
+                        <span id="fa731992-c093-4c17-a98e-21cd7d40715aSSTA1">PA</span>
+                        <span id="fa731992-c093-4c17-a98e-21cd7d40715aSCNT1"></span>
+                    </span>
+                    <span class="field" id="fa731992-c093-4c17-a98e-21cd7d40715aFRFM1"><p>Computer Systems &amp; Technology</p></span>
+                </div>
+            </div>
+        <div id="PARAGRAPH_fa731992-c093-4c17-a98e-21cd7d40715a_2" class="paragraph" style="
+      padding-top:NaNpx;
+    ">
+                <div class="singlecolumn margin-tp10">
+                    
+                    <span class="paddedline">
+                        <span class="datesWrapper">
+                            <span class="jobdates" format="%B %Y" id="fa731992-c093-4c17-a98e-21cd7d40715aGRDT2">December 2017</span>
+                        </span>
+						  
+                        <span class="degree" id="fa731992-c093-4c17-a98e-21cd7d40715aDGRE2">Masters of Science</span>
+                        <span class="programline" id="fa731992-c093-4c17-a98e-21cd7d40715aSTUY2"></span>
+                    </span>
+                    <span class="paddedline">
+                        <span id="fa731992-c093-4c17-a98e-21cd7d40715aSCHO2">Duquesne University</span><span><span>, </span></span>
+                        <span id="fa731992-c093-4c17-a98e-21cd7d40715aSCIT2">Pittsburgh</span><span>, </span>
+                        <span id="fa731992-c093-4c17-a98e-21cd7d40715aSSTA2">PA</span>
+                        <span id="fa731992-c093-4c17-a98e-21cd7d40715aSCNT2"></span>
+                    </span>
+                    <span class="field" id="fa731992-c093-4c17-a98e-21cd7d40715aFRFM2"><p>Science of Leadership</p></span>
+                </div>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
