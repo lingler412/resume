@@ -470,3 +470,14 @@ div#document div.sectiontitle {
         line-height: 14pt;
     }
 }
+
+.download-btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+    background: #2f527b;
+    color: #fff;
+}
