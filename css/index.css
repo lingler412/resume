@@ -18,7 +18,7 @@ span, applet, object, iframe, blockquote, pre, a, abbr, acronym, address, big, c
     background: transparent;
 }
 
-div#document h1, div#document h2, div#document h3, div#document h4, div#document h5, div#document h6, div#document p, div#document img {
+div#document h1, div#document h2, div#document h3, div#document h4, div#document h5, div#document h6, div#document p, div#document img, div#document .graphic {
     margin: 0;
     padding: 0;
     border: 0;
@@ -279,6 +279,7 @@ div#document .graphic {
     margin: 4px;
     position: relative;
     font-weight: 700;
+    border: 2.5pt solid;
 }
 
 div#document .datesWrapper {
@@ -310,27 +311,6 @@ div#document .graphic .textBtm {
     bottom: -21pt;
     right: 8pt;
     font-weight: 500;
-}
-
-div#document .italicTxtStyle {
-    /* blank style used for dynamic class in C# code */
-}
-
-div#document .graphic .full-name {
-    display: none;
-}
-
-div#document .graphic .full-name:empty + .textTop {
-    top: 0;
-    left: 0;
-    right: 0;
-    font-size: 28pt;
-    line-height: 65pt;
-    font-weight: 700;
-}
-
-div#document .graphic .full-name:empty + .textTop + i {
-    display: none;
 }
 
 div#document .city-name {
@@ -471,7 +451,7 @@ div#document div.sectiontitle {
     }
 }
 
-.download-btn {
+button {
     padding: 12px 24px;
     font-size: 18px;
     font-weight: bold;
@@ -481,3 +461,9 @@ div#document div.sectiontitle {
     background: #2f527b;
     color: #fff;
 }
+
+@media print { 
+    button { 
+      display: none!important;
+     } 
+    }

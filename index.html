@@ -6,6 +6,10 @@
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js">
+    </script>
   </head>
   <body>
     <div id="document" class="RND fontsize fontface vmargins hmargins linespacing pagesize">
@@ -16,7 +20,6 @@
       padding-top:NaNpx;
     ">
                 <div class="graphic">
-                    <span class="full-name">L</span>
                     <span class="textTop">R</span>
                     <i class="italicTxtStyle"></i>
                     <span class="textBtm">L</span>
@@ -432,8 +435,9 @@
         </div>
       </div>
     </div>
-    <div>
-        <button class="download-btn">Download as PDF</button>
+    <div data-html2canvas-ignore="true">
+        <button onclick="printContent()">Print</button>
+        <button onclick="downloadContent()">Download</button>
     </div>
     <script type="text/javascript" src="js/index.js">
     </script>
