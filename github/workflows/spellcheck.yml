@@ -1,0 +1,25 @@
+name: Spellcheck Action
+on: push
+
+jobs:
+  build:
+    name: Spellcheck
+    runs-on: ubuntu-latest
+    steps:
+    # The checkout step
+    - uses: actions/checkout@v3
+    - uses: rojopolis/spellcheck-github-actions@v0
+    name: Spellcheck
+    with:
+        sources:
+          - '**/*.html'
+        default_encoding: utf-8
+        aspell:
+          dictionary: en_US
+        pipeline:
+          pyspelling.filters.html:
+            comments: false
+            Ignore:
+            - code
+            - pre
+            - script

@@ -12,7 +12,7 @@ if (element) {
 		margin: 0.5,   
 		image: { type: 'jpeg', quality: 0.98 },
 		html2canvas: { scale: 2 },
-		pagebreak: { avoid: 'li'},
+		pagebreak: { avoid: ['li', 'ul', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'] },
 		jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
 	};
 
