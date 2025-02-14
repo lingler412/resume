@@ -9,17 +9,11 @@ jobs:
     # The checkout step
     - uses: actions/checkout@v3
     - uses: rojopolis/spellcheck-github-actions@v0
-    name: Spellcheck
-    with:
-        sources:
-          - '**/*.html'
+      with:
+        sources: '**/*.html'
         default_encoding: utf-8
-        aspell:
-          dictionary: en_US
-        pipeline:
-          pyspelling.filters.html:
-            comments: false
-            Ignore:
-            - code
-            - pre
-            - script
+        spellcheck_args: >
+          --lang=en_US
+          --pipeline=pyspelling.filters.html
+          --comments=false
+          --ignore=code,pre,script
