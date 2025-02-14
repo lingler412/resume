@@ -117,9 +117,9 @@ div#document div.address {
     padding-bottom: 5pt;
 }
 
-div#document span.jobtitle, span.companyname, span.degree, span.programline, span.joblocation {
+/* div#document span.jobtitle, span.companyname, span.degree, span.programline, span.joblocation {
     font-style: none;
-}
+} */
 
 div#document span.jobtitle {
     display: block;
@@ -136,7 +136,7 @@ div#document span.paddedline {
 }
 
 div#document {
-    color: #666;
+    /* color: #666; */
     background-color: #FFF !important;
     line-height: 14pt;
     color: #333;
@@ -348,12 +348,6 @@ div#document .section.photo-cv + .SECTION_NAME + .SECTION_CNTC {
     padding-top: 1pt;
 }
 
-@media print {
-    div#document.pagesize {
-        width: 100%;
-    }
-}
-
 body {
     font-feature-settings: "liga" 0;
     -moz-font-feature-settings: "liga" off;
@@ -466,4 +460,7 @@ button {
     button { 
       display: none!important;
      } 
+     div#document.pagesize {
+        width: 100%;
     }
+}
