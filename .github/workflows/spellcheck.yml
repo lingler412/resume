@@ -5,18 +5,12 @@ on:
       - main
 
 jobs:
-  build:
-    name: Spellcheck
+  misspell:
+    name: Check spelling with misspell
     runs-on: ubuntu-latest
     steps:
-    # The checkout step
-    - uses: actions/checkout@v3
-    - uses: rojopolis/spellcheck-github-actions@v0
-      with:
-        sources: '**/*.html'
-        default_encoding: utf-8
-        spellcheck_args: >
-          --lang=en_US
-          --pipeline=pyspelling.filters.html
-          --comments=false
-          --ignore=code,pre,script
+      - uses: actions/checkout@v2
+      - name: Install
+        run: wget -O - -q https://git.io/misspell | sh -s -- -b .
+      - name: Misspell
+        run: ./misspell -error
