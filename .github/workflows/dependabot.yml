@@ -1,8 +1,12 @@
 name: Dependabot Workflow
 on:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: ["Spellcheck Action"]
+    types:
+      - completed
+  #push:
+  #branches:
+  #- main
 
 jobs:
   dependabot:
