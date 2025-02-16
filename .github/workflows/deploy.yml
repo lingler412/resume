@@ -3,7 +3,7 @@ name: Deploy static content to Pages
 
 on:
   workflow_run:
-    workflows: ["Spellcheck Action", "Dependabot Workflow"]
+    workflows: ["Dependabot Workflow"]
     types:
       - completed
 
