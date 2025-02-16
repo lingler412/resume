@@ -4,9 +4,8 @@ on:
     workflows: ["Spellcheck Action"]
     types:
       - completed
-  #push:
-  #branches:
-  #- main
+
+  workflow_dispatch:
 
 jobs:
   dependabot:
