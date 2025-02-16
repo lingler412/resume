@@ -1,4 +1,4 @@
-name: Dependabot Workflow
+name: Dependabot
 on:
   workflow_run:
     workflows: ["Spellcheck Action"]
