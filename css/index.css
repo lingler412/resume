@@ -311,6 +311,7 @@ button {
     border: none;
     background: #2f527b;
     color: #fff;
+    border-radius: 3px;
 }
 
 @media print { 
