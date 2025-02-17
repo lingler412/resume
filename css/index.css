@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,600i,700,700i,800,800i");
 
-
-
-
-
 div#document div.name {
     font-size: 21pt;
     line-height: 30pt;
@@ -22,6 +18,7 @@ div#document div.name span.field {
 
 div#document div.paragraph {
     position: relative;
+    padding-top: 0px;
 }
 
 div#document [id^="SECTION_EDUC"] div.paragraph, div#document [id^="SECTION_EXPR"] div.paragraph {
@@ -81,6 +78,7 @@ div#document div.skillSection .paragraph:nth-child(3n+5) {
 
 div#document div.skillSection {
     width: 100%;
+    padding-top: 0px;
 }
 
 div#document div.skillSection .field {
@@ -109,6 +107,7 @@ div#document .section {
 div#document div.summary {
     float: none;
     width: auto;
+    padding-top: 0px;
 }
 
 div#document .section.contact-info {
@@ -134,6 +133,7 @@ div#document div.heading {
     text-transform: uppercase;
     background-color: #f7f7f7;
     padding-left: 8pt;
+    padding-top: 0px;
 }
 
 div#document .singlecolumn, div#document .maincolumn {
