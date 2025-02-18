@@ -12,6 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: rojopolis/spellcheck-github-actions@0.47.0
+        with:
+          config_path: .pyspelling.yml
+        # Optional: Set the language to use for spellchecking
       #- uses: sobolevn/misspell-fixer-action@master
       # - uses: peter-evans/create-pull-request@v7
       # with:
