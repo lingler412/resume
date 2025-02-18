@@ -1,0 +1,13 @@
+matrix:
+  - name: markdown
+    sources:
+      - "**/*.md"
+    dictionary: en_US
+  - name: html
+    sources:
+      - "**/*.html"
+    dictionary: en_US
+  - name: text
+    sources:
+      - "**/*.txt"
+    dictionary: en_US
