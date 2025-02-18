@@ -6,12 +6,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  misspell:
+  spellcheck:
     name: Check spelling with misspell
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install
-        run: wget -O - -q https://git.io/misspell | sh -s -- -b .
-      - name: Misspell
-        run: ./misspell -error /*.html
+      - name: Install misspell tool
+        run: sudo apt-get update && sudo apt-get install -y misspell
+      - name: Run misspell
+        run: ./misspell -error **/*.{html,md,txt}
