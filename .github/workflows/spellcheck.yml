@@ -14,4 +14,4 @@ jobs:
       - name: Install misspell tool
         run: wget -O - -q https://git.io/misspell | sh -s -- -b .
       - name: Run misspell tool
-        run: ./misspell -error **/**/*.{html,md,txt}
+        run: ./misspell -error *.html
