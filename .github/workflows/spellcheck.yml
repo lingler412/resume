@@ -13,8 +13,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: sobolevn/misspell-fixer-action@master
         # - uses: peter-evans/create-pull-request@v7
-        # with:
-        #  token:
+        with:
+          options: "-rsvn src/"
+
         # commit-message: "Fixes by misspell-fixer"
         # title: "Typos fix by misspell-fixer"
       # - name: Install misspell tool
