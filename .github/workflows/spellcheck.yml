@@ -12,10 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install misspell tool
-        run: |
-          sudo apt-get update
-          wget -qO- https://github.com/client9/misspell/releases/latest/download/misspell-linux-amd64.tar.gz | tar xz
-          sudo mv misspell /usr/local/bin/
-          - name: Set up Go environment
+        run: wget -O - -q https://git.io/misspell | sh -s -- -b
       - name: Run misspell
         run: /usr/local/bin/misspell -error **/*.{html,md,txt}
