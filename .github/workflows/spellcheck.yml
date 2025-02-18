@@ -12,9 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install misspell tool
-        run: |
-          curl -L -o misspell https://git.io/misspell
-          chmod +x misspell
-          sudo mv misspell /usr/local/bin/misspell
+        run: wget -O - -q https://git.io/misspell | sh -s -- -b .
       - name: Run misspell tool
         run: /usr/local/bin/misspell -error **/*.{html,md,txt}
