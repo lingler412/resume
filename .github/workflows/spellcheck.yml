@@ -13,8 +13,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install misspell tool
         run: |
-          curl -L -o misspell.tar.gz https://github.com/client9/misspell/releases/download/v0.3.4/misspell_0.3.4_linux_amd64.tar.gz
+          curl -L -o ./install-misspell.sh https://git.io/misspell
+          chmod +x misspell
           tar -xf misspell.tar
-          sudo mv misspell /usr/local/bin/misspell
+          sudo mv bin/misspell /usr/local/bin/misspell
       - name: Run misspell tool
         run: /usr/local/bin/misspell -error **/*.{html,md,txt}
