@@ -12,6 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install misspell tool
-        run: wget -O - -q https://git.io/misspell | sh -s -- -b /usr/local/bin
+        run: |
+          curl -L -o misspell.tar.gz https://github.com/client9/misspell/releases/download/v0.3.4/misspell_0.3.4_linux_amd64.tar.gz
+          tar -xzf misspell.tar.gz
+          sudo mv misspell /usr/local/bin/misspell
       - name: Run misspell
         run: /usr/local/bin/misspell -error **/*.{html,md,txt}
