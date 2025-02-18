@@ -12,6 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install misspell tool
-        run: sudo apt-get update && sudo apt-get install -y misspell
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y golang
+          go install github.com/client9/misspell/cmd/misspell@latest
+          export PATH=$PATH:$(go env GOPATH)/bin
       - name: Run misspell
         run: ./misspell -error **/*.{html,md,txt}
