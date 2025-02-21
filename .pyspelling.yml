@@ -1,0 +1,12 @@
+matrix:
+  default:
+    sources:
+      - "**/*.html"
+      - "**/*.css"
+      - "**/*.js"
+    language: en_US
+    spelling:
+      wordlists:
+        - wordlist.txt
+      ignore-patterns:
+        - "^https?://"
