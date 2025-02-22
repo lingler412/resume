@@ -8,12 +8,12 @@ matrix:
             - pre
           sources:
             - "**/*.html"
-    language: en_US
-    spelling:
-    wordlists:
-      - words.txt
-    ignore-patterns:
-      - "^https?://"
-    report:
-      format: html # Example of report configuration
-      output: spelling-report.html
+language: en_US
+spelling:
+  wordlists:
+    - words.txt
+ignore-patterns:
+  - "^https?://"
+report:
+  format: html # Example of report configuration
+  output: spelling-report.html
