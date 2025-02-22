@@ -2,13 +2,13 @@ matrix:
   default:
     pipeline:
       - pyspelling.filters.html:
-          sources: ["**/*.html"]
+          sources: ["**/*.html"] # Example of HTML filter
       - pyspelling.filters.css:
-          sources: ["**/*.css"]
+          sources: ["**/*.css"] # Example of CSS filter
       - pyspelling.filters.js:
-          sources: ["**/*.js"]
+          sources: ["**/*.js"] # Example of JS filter
       - pyspelling.filters.markdown:
-          sources: ["**/*.md"] # Example of an additional filter
+          sources: ["**/*.md"] # Example of Markdown filter
     language: en_US
     spelling:
       ignore-patterns:
