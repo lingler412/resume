@@ -4,11 +4,16 @@ matrix:
       - pyspelling.filters.html:
       - pyspelling.filters.css:
       - pyspelling.filters.js:
+      - pyspelling.filters.markdown: # Example of an additional filter
     sources:
       - "**/*.html"
       - "**/*.css"
       - "**/*.js"
+      - "**/*.md" # Example of an additional source
     language: en_US
     spelling:
       ignore-patterns:
         - "^https?://"
+    report:
+      format: html # Example of report configuration
+      output: spelling-report.html
