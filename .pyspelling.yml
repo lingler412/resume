@@ -1,17 +1,18 @@
 matrix:
   default:
     pipeline:
-      - propelling.filters.html:
-          sources: ["**/*.html"] # Example of HTML filter
+      - pyspelling.filters.html:
       - pyspelling.filters.css:
-          sources: ["**/*.css"] # Example of CSS filter
       - pyspelling.filters.js:
-          sources: ["**/*.js"] # Example of JS filter
       - pyspelling.filters.markdown:
-          sources: ["**/*.md"] # Example of Markdown filter
+    sources:
+      - ["**/*.html"]
+      - ["**/*.css"]
+      - ["**/*.js"]
+      - ["**/*.md"]
     language: en_US
     spelling:
-    words lists:
+    wordlists:
       - words.txt
     ignore-patterns:
       - "^https?://"
