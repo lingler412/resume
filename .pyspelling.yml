@@ -1,7 +1,7 @@
 matrix:
   default:
     pipeline:
-      - pyspelling.filters.html:
+      - propelling.filters.html:
           sources: ["**/*.html"] # Example of HTML filter
       - pyspelling.filters.css:
           sources: ["**/*.css"] # Example of CSS filter
@@ -11,8 +11,10 @@ matrix:
           sources: ["**/*.md"] # Example of Markdown filter
     language: en_US
     spelling:
-      ignore-patterns:
-        - "^https?://"
+    words lists:
+      - words.txt
+    ignore-patterns:
+      - "^https?://"
     report:
       format: html # Example of report configuration
       output: spelling-report.html
