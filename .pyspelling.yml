@@ -5,11 +5,15 @@ matrix:
       - pyspelling.filters.css:
       - pyspelling.filters.js:
       - pyspelling.filters.markdown:
-    sources:
-      - ["**/*.html"]
-      - ["**/*.css"]
-      - ["**/*.js"]
-      - ["**/*.md"]
+          comments: false
+          ignores:
+            - code
+            - pre
+          sources:
+            - "**/*.html"
+            - "**/*.css"
+            - "**/*.js"
+            - "**/*.md"
     language: en_US
     spelling:
     wordlists:
