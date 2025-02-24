@@ -1,7 +1,5 @@
 matrix:
   default:
-    pipeline:
-      - pyspelling.filters.html:HTMLFilter
     sources:
       - "**/*.html"
 language: en_US
