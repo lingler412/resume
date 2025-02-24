@@ -1,15 +1,16 @@
 matrix:
   default:
     pipeline:
-      - "pyspelling.filters.html"
-    comments: false
-    ignores:
-      - code
-      - pre
-    sources:
-      - "**/*.html"
+      - pyspelling.filters.html:
+          - pyspelling.filters.html
+        comments: false
+        ignores:
+          - code
+          - pre
+        sources:
+          - "**/*.html"
 language: en_US
-spelling:
+  wordlist:
   wordlists:
     - words.txt
 ignore-patterns:
