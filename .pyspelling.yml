@@ -1,6 +1,7 @@
 matrix:
   include:
-    - name: "Check Code"
+    task:
+      name: "Check Code"
       sources:
         - "**/*.py"
         - "**/*.html"
