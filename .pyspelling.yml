@@ -1,11 +1,7 @@
 matrix:
   - task:
       name: "Check HTML"
-      sources: "**/src/**/*.html"
-      dictionary: "en_US"
-  - task:
-      name: "Check Markdown"
-      sources: "src/**/*.md"
+      sources: "**/**/*.html"
       dictionary: "en_US"
     wordlists:
       - words.txt
