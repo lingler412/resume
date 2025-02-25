@@ -3,7 +3,7 @@ matrix:
       name: "Check HTML"
       glob_flags: N|G|B
       sources:
-        - "**/*.html"
-        - "**/*.htm"
-        - "**/*.xhtml"
+        - "*/*.html"
+        - "*/*.htm"
+        - "*/*.xhtml"
       dictionary: "en_US"
