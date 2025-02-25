@@ -1,6 +1,7 @@
 matrix:
   - task:
       name: "Check HTML"
+      glob_flags: N|G|B
       sources:
         - "**/*.html"
         - "**/*.htm"
