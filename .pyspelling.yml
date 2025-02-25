@@ -1,9 +1,7 @@
 matrix:
-  - task: "spell"
-    name: "Spelling Check"
+  - name: HTML
+    pipeline:
+      - pyspelling.filters.html
     sources:
-      - "**/*.py"
       - "**/*.html"
-      - "**/*.css"
-      - "**/*.js"
-    dictionary: "en_US"
+    default_encoding: utf-8
