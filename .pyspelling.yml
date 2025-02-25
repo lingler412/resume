@@ -2,7 +2,7 @@ matrix:
   - task:
       name: "Check HTML"
       sources:
-        - "**/*.html"
-        - "**/*.htm"
-        - "**/*.xhtml"
+        - "*.html"
+        - "*.htm"
+        - "*.xhtml"
       dictionary: "en_US"
