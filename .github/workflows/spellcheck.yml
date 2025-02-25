@@ -28,3 +28,19 @@ jobs:
       - name: Spell check
         run: |
           python -m pyspelling
+        env:
+          SPELLCHECK_MATRIX: |
+            [
+              {
+                "name": "HTML",
+                "files": ["**/*.html"]
+              },
+              {
+                "name": "CSS",
+                "files": ["**/*.css"]
+              },
+              {
+                "name": "JavaScript",
+                "files": ["**/*.js"]
+              }
+            ]
