@@ -1,10 +1,8 @@
 matrix:
-  include:
-    task:
-      name: "Check Code"
-      sources:
-        - "**/*.py"
-        - "**/*.html"
-        - "**/*.css"
-        - "**/*.js"
-      dictionary: "en_US"
+  - name: "Check Code"
+    sources:
+      - "**/*.py"
+      - "**/*.html"
+      - "**/*.css"
+      - "**/*.js"
+    dictionary: "en_US"
