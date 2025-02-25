@@ -1,8 +1,8 @@
 matrix:
-  - name: "Check Code"
-    sources:
-      - "**/*.py"
-      - "**/*.html"
-      - "**/*.css"
-      - "**/*.js"
-    dictionary: "en_US"
+  name: "Spelling Check"
+  sources:
+    - "**/*.py"
+    - "**/*.html"
+    - "**/*.css"
+    - "**/*.js"
+  dictionary: "en_US"
