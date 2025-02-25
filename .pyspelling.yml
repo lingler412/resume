@@ -2,8 +2,7 @@ matrix:
   default:
     sources:
       - "**/*.html"
-language: en_US
-  wordlist:
+  language: en_US
   wordlists:
     - words.txt
 ignore-patterns:
