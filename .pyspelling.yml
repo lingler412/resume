@@ -1,5 +1,8 @@
 matrix:
   - task:
       name: "Check HTML"
-      sources: "**/*.html"
+      sources:
+        - "**/*.html"
+        - "**/*.htm"
+        - "**/*.xhtml"
       dictionary: "en_US"
