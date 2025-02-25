@@ -1,9 +1,10 @@
 matrix:
   default:
-    sources:
-      - "**/*.html"
-  dictionary:
-    - "en_US"
+    dictionary: en_US
+    files:
+      - src/**/*.html
+      - src/**/*.css
+      - src/**/*.js
   wordlists:
     - words.txt
 ignore-patterns:
