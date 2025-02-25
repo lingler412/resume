@@ -1,12 +1,5 @@
 matrix:
   - task:
       name: "Check HTML"
-      sources: "/home/runner/work/portfolio/portfolio/*.html"
+      sources: "**/*.html"
       dictionary: "en_US"
-    wordlists:
-      - words.txt
-    # Ignore URLs to avoid false positives on links
-    ignore-patterns:
-      - "^https?://"
-    format: html # Report format options: html, text, json
-    output: spelling-report.html
