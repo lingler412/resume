@@ -1,5 +1,8 @@
 matrix:
   - name: HTML
+    dictionary:
+      wordlists:
+        - excluded_words.txt
     pipeline:
       - pyspelling.filters.html
     sources:
