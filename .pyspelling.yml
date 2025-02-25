@@ -1,8 +1,9 @@
 matrix:
-  name: "Spelling Check"
-  sources:
-    - "**/*.py"
-    - "**/*.html"
-    - "**/*.css"
-    - "**/*.js"
-  dictionary: "en_US"
+  - task: "spell"
+    name: "Spelling Check"
+    sources:
+      - "**/*.py"
+      - "**/*.html"
+      - "**/*.css"
+      - "**/*.js"
+    dictionary: "en_US"
