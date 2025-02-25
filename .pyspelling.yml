@@ -1,8 +1,9 @@
 matrix:
-  - task:
-      name: "Check HTML"
-      glob_flags: N|G|B
+  include:
+    - name: "Check Code"
       sources:
-        - index.html
-        - resume.html
+        - "**/*.py"
+        - "**/*.html"
+        - "**/*.css"
+        - "**/*.js"
       dictionary: "en_US"
