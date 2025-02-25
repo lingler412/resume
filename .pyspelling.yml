@@ -1,14 +1,16 @@
 matrix:
-  default:
-    dictionary: en_US
-    files:
-      - src/**/*.html
-      - src/**/*.css
-      - src/**/*.js
-  wordlists:
-    - words.txt
-ignore-patterns:
-  - "^https?://"
-report:
-  format: html # Example of report configuration
-  output: spelling-report.html
+  - task:
+      name: "Check HTML"
+      sources: "**/src/**/*.html"
+      dictionary: "en_US"
+  - task:
+      name: "Check Markdown"
+      sources: "src/**/*.md"
+      dictionary: "en_US"
+    wordlists:
+      - words.txt
+    # Ignore URLs to avoid false positives on links
+    ignore-patterns:
+      - "^https?://"
+    format: html # Report format options: html, text, json
+    output: spelling-report.html
