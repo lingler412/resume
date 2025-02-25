@@ -1,7 +1,7 @@
 matrix:
   - task:
       name: "Check HTML"
-      sources: "/*.html"
+      sources: "*.html"
       dictionary: "en_US"
     wordlists:
       - words.txt
