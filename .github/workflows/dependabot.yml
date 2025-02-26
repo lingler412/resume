@@ -1,7 +1,7 @@
 name: Dependabot
 on:
   workflow_run:
-    workflows: ["Spellcheck Action"]
+    workflows: ["Spell Check"]
     types:
       - completed
 
@@ -10,6 +10,7 @@ on:
 jobs:
   dependabot:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
